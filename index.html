@@ -19,8 +19,11 @@
             extend: {
               colors: {
                 clifford: '#da373d',
-                lightGreen: '#ABEF5F',
-                lightGreen2: '#ABEF5F',
+                firstLightGreen: '#ABEF5F',
+                sendaryLightGreen: 'rgba(171, 239, 95, 0.5)',
+                primaryTextColor: '#212121',
+                secondaryTextColor: '#494949',
+                thirdTextColor: '#737373',
               },
               fontFamily: {
                 manrope: ['Manrope', 'sans-serif'], // Correctly defining the font family
@@ -37,7 +40,7 @@
             <nav>
                 <div class="navbar">
                     <div class="navbar-start">
-                    <a class="btn btn-ghost text-xl font-extrabold"><i class="fa-solid fa-arrow-right bg-lightGreen p-1 rounded-full -rotate-45"></i> Rinterio</a>
+                    <a class="btn btn-ghost text-xl font-extrabold"><i class="fa-solid fa-arrow-right bg-firstLightGreen p-1 rounded-full -rotate-45"></i> Rinterio</a>
                     </div>
                     <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
@@ -53,7 +56,7 @@
                         <div><i class="fa-solid fa-magnifying-glass p-2 bg-white rounded-full"></i></div>
                         <div><i class="fa-solid fa-cart-shopping p-2 bg-white rounded-full"></i></div>
                         <div>
-                            <a class="btn bg-lightGreen">Book Consult<i class="fa-solid fa-arrow-right bg-stone-900 text-white p-2 rounded-full -rotate-45"></i></a>
+                            <a class="btn bg-firstLightGreen">Book Consult<i class="fa-solid fa-arrow-right bg-stone-900 text-white p-2 rounded-full -rotate-45"></i></a>
                         </div>
                     </div>
                     </div>
@@ -62,7 +65,21 @@
                     </div>
                 </div>
             </nav>
-
+            <!-- hero section content  -->
+            <div class="pt-9 pb-24">
+                <!-- hero image  -->
+                <div class="w-11/12 mx-auto"><img class="mx-auto" src="assets/banner.png" alt=""></div>
+                <div class="w-11/12 text-center mx-auto my-6">
+                    <h1 class="font-extrabold text-3xl text-primaryTextColor leading-10 lg:text-6xl">A barn house of this design has a striking appearance</h1>
+                    <p class="mt-6 mb-7 text-secondaryTextColor leading-6 text-[14px] lg:text-base lg:w-10/12 mx-auto">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+                    <div class="lg:hidden mx-auto bg-sendaryLightGreen rounded-full">
+                        <button class="text-lg font-bold py-2">View Details<i class="fa-solid fa-arrow-right ml-2 bg-firstLightGreen p-1.5 rounded-full -rotate-45"></i></button>
+                    </div>
+                    <div class="hidden lg:block">
+                        <button class="text-lg font-bold px-6 py-2 bg-sendaryLightGreen rounded-full">View Details<i class="fa-solid fa-arrow-right ml-2 bg-firstLightGreen p-1.5 rounded-full -rotate-45"></i></button>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
 </body>
